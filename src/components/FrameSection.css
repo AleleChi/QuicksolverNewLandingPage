@@ -115,7 +115,7 @@
 .frame-section .app-buttons {
   
     display: flex;
-    gap: 20px;
+    gap: 80px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
