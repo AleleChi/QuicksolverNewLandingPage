@@ -70,10 +70,10 @@ const FrameSection = forwardRef((props, ref) => {
             Get instant solutions and comprehensive learning support wherever you are!
           </p>
           <div className="app-buttons">
-            <a href="#" className="app-button">
+            <a href="https://play.google.com/store/apps/details?id=com.myapp.quick_solver2" className="app-button">
               <img src={GooglePlayIcon} alt="Get it on Google Play" />
             </a>
-            <a href="#" className="app-button">
+            <a href="https://apps.apple.com/us/app/quick-solver/id6474582912" className="app-button">
               <img src={AppStoreIcon} alt="Download on the App Store" />
             </a>
           </div>

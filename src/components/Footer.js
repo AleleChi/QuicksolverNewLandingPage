@@ -28,10 +28,10 @@ const Footer = () => {
             <div className="footer-middle">
                 <h3>Useful Links</h3>
                 <ul className="footer-links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="/about-us">About us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contact-us">Contact us</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
                 </ul>
             </div>
             <div className="footer-right">
@@ -44,8 +44,8 @@ const Footer = () => {
                     <a href="https://www.tiktok.com/@quicksolver_?lang=en"><img src={TikTokIcon} alt="TikTok" className="social-icon" /></a>
                 </div>
                 <div className="footer-bottom-links">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Privacy Policy</a>
+                    <a href="/terms-of-service">Terms of Service</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                 </div>
             </div>
         </div>
