@@ -1,0 +1,346 @@
+.frame-section {
+    background: linear-gradient(to bottom right, #e0ffe0, #f0f5f0);
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.frame-section .circle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.frame-section .circle-container.small-circle {
+    left: 0;
+    width: 15%;
+    height: auto;
+}
+
+.frame-section .circle-background {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.frame-section .circle-background.smaller {
+    width: 100%;
+    height: auto;
+}
+
+.frame-section .rotating-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform-origin: -260px -250px;
+    animation: rotate 20s linear infinite;
+    z-index: 1; 
+}
+
+.frame-section .small-rotating-icon {
+    transform-origin: -200px -200px;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.frame-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.frame-section .text-content {
+    max-width: 40%;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.frame-section .text-content .highlight {
+    background-color: #c5edc5;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #2a9d2a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.frame-section .text-content h1 {
+    color: #121a12;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.frame-section .changing-text {
+    width: 100%;
+    color: #FF6100;
+    font-weight: bold;
+    animation: fadeInOut 10s ease-in-out infinite;
+}
+
+.frame-section .text-content p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.frame-section .text-content p .p-highlight {
+    color: #2a9d2a;
+    font-weight: bolder;
+}
+
+.frame-section .app-buttons {
+    display: flex;
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.frame-section .app-button img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.frame-section .app-button img:hover {
+    transform: scale(1.1);
+}
+
+.frame-section .image-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 50%;
+    margin-top: 70px;
+    animation: slideInRight 1s ease-in-out;
+    z-index: 2; 
+}
+
+.frame-section .phone-mockup {
+    width: 100%;
+    max-width: 370px;
+    margin-left: -20px; 
+    margin-top: 10px; 
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.frame-section .phone-mockup2 {
+    margin-left: -110px;
+    margin-top: 20px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.frame-section .phone-mockup:hover,
+.frame-section .phone-mockup2:hover {
+    transform: scale(1.05);
+}
+
+.frame-section .phone-mockup.scrolled-in,
+.frame-section .phone-mockup2.scrolled-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .frame-section {
+        padding: 30px;
+        margin-top: 100px;
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .frame-section .circle-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+  
+    .frame-section .circle-container.small-circle {
+        left: auto;
+        width: 15%;
+        height: auto;
+        top: 50px; 
+        right: 0;
+    }
+
+    .frame-section .rotating-icon {
+        display: block; 
+        width: 30px; 
+        height: 30px; 
+        transform-origin: -130px -125px; 
+        animation: rotate 20s linear infinite;
+        z-index: 1; 
+    }
+
+    .frame-section .small-rotating-icon {
+        display: block; 
+        transform-origin: -100px -100px; 
+        animation: rotate 30s linear infinite;
+        z-index: 1; 
+    }
+
+    .frame-section .content {
+        flex-direction: column; 
+        align-items: center; 
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .frame-section .text-content {
+        max-width: 100%; 
+        text-align: center; 
+        animation: slideInLeftMobile 1s ease-in-out;
+    }
+
+    .frame-section .text-content .highlight {
+        margin-bottom: 10px;
+        font-size: 15px; 
+    }
+
+    .frame-section .changing-text {
+        font-size: 40px; 
+        margin-bottom: 20px;
+    }
+
+    .frame-section .text-content p {
+        font-size: 16px; 
+        margin-bottom: 20px; 
+    }
+
+    .frame-section .text-content p .p-highlight {
+        font-size: 18px; 
+    }
+
+    .frame-section .app-buttons {
+        flex-direction: row; 
+        gap: 10px; 
+        align-items: center; 
+    }
+
+    .frame-section .app-button img {
+        width: 120px; 
+        margin-left: 25px;
+    }
+
+    .frame-section .image-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        max-width: 50%;
+        margin-top: 70px;
+        animation: slideInRightMobile 1s ease-in-out;
+        z-index: 2; 
+    }
+    
+    .frame-section .phone-mockup {
+        width: 200px;
+        margin-right: -50px; 
+        margin-bottom: -40px; 
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    
+    .frame-section .phone-mockup2 {
+        margin-left: -90px;
+        margin-top: 50px;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    
+    .frame-section .phone-mockup:hover,
+    .frame-section .phone-mockup2:hover {
+        transform: scale(1.05);
+    }
+    
+    .frame-section .phone-mockup.scrolled-in,
+    .frame-section .phone-mockup2.scrolled-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftMobile {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRightMobile {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

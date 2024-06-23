@@ -1,0 +1,266 @@
+.new-section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: -100px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.new-section1 .text-content1 {
+    max-width: 50%;
+    padding: 7%;
+    margin-top: 150px;
+    animation: bounceInLeft 1s ease-in-out;
+}
+
+.section-title1 {
+    color: #008000;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.section-subtitle1 {
+    font-size: 54px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.section-description1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    padding: 15px 30px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.image-content1 {
+    position: relative;
+    left: 90px;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+    animation: bounceInRight 1s ease-in-out;
+}
+
+.app-image1 {
+    width: 100%;
+}
+
+.image1 {
+    position: relative;
+    z-index: 0;
+    right: 400px;
+    margin-top: 100px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.image2 {
+    position: absolute;
+    top: 130px;
+    right: 200px;
+    z-index: 1;
+    margin-top: 100px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .new-section1 {
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 0;
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .new-section1 .text-content1 {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px;
+        text-align: left; 
+        animation: bounceInLeftMobile 1s ease-in-out;
+    }
+
+    .section-title1 {
+        font-size: 36px;
+    }
+
+    .section-subtitle1 {
+        font-size: 32px;
+    }
+
+    .section-description1 {
+        font-size: 18px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .image-content1 {
+        position: relative;
+        left: 0;
+        max-width: 100%;
+        margin-bottom: -20px;
+        justify-content: center;
+        animation: bounceInRightMobile 1s ease-in-out;
+    }
+
+    .image1 {
+        position: relative;
+        left: 40px;
+        margin-top: 0;
+        width: 60%;
+        z-index: 0;
+        animation: fadeInUpMobile 1.5s ease-in-out;
+    }
+
+    .image2 {
+        position: relative;
+        top: 0;
+        right: 50px;
+        width: 60%;
+        margin-top: 10px;
+        z-index: 1;
+        animation: fadeInUpMobile 1.5s ease-in-out;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(30%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-30%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUpMobile {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInLeftMobile {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(30%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceInRightMobile {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-30%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

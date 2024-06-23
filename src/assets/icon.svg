@@ -1,0 +1,22 @@
+<svg width="87" height="29" viewBox="0 0 87 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SVG">
+<path id="Vector" d="M84.7064 -14.4157C84.7064 -37.0964 66.32 -55.4828 43.6393 -55.4828C20.9586 -55.4828 2.57227 -37.0964 2.57227 -14.4157C2.57227 8.26501 20.9586 26.6514 43.6393 26.6514C66.32 26.6514 84.7064 8.26501 84.7064 -14.4157Z" fill="#0A7212"/>
+<g id="Mask group">
+<mask id="mask0_3565_114" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="13" y="-44" width="59" height="59">
+<g id="Group">
+<path id="Vector_2" d="M70.658 13.6824L14.4609 13.6824L14.4609 -42.5147H70.658V13.6824Z" fill="white" stroke="white" stroke-width="2.16142"/>
+</g>
+</mask>
+<g mask="url(#mask0_3565_114)">
+<g id="Group_2">
+<path id="Vector_3" d="M23.4139 -14.4137C23.284 -5.82181 30.0955 1.1196 38.6874 1.31111C43.1168 1.40913 46.3288 -0.382587 49.6296 -2.7876C52.5271 -4.89856 52.8212 -6.25496 57.1502 -7.11888" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M30.1387 6.2229L30.8363 4.53818" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M47.2328 6.2229L46.5352 4.53818" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M21.4375 2.83228L24.1776 0.0921301" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M38.6855 9.97705V6.10173" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M55.9316 2.83228L53.1914 0.0921301" stroke="#FCFBFB" stroke-width="2.16142" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

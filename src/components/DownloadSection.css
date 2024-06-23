@@ -1,0 +1,125 @@
+.download-section7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f0f5f0;
+    border-top: 2px solid #008000; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.text-content7 {
+    font-size: 18px;
+    color: #333;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.highlight7 {
+    color: #008000; 
+    font-weight: bold;
+}
+
+.app-buttons7 {
+    display: flex;
+    gap: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.app-button7 {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .download-section7 {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 20px;
+        margin-right: 20px;
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .text-content7 {
+        text-align: left; 
+        margin-bottom: 20px;
+        animation: slideInLeftMobile 1s ease-in-out;
+    }
+
+    .app-buttons7 {
+        display: flex;
+        flex-direction: row; 
+        gap: 10px;
+        animation: slideInRightMobile 1s ease-in-out;
+    }
+
+    .app-button7 {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Animations */
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftMobile {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRightMobile {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

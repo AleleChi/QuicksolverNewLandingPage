@@ -1,0 +1,252 @@
+.learning-platform-section4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-left: 130px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.text-content4 {
+    max-width: 50%;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.section-title4 {
+    color: #008000; 
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title4 .section-highlight {
+    color: #000;
+    font-size: 54px;
+}
+
+.features-list4 {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.feature-item4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feature-icon4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px; 
+    margin-right: 20px; 
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.feature-icon4 img {
+    width: 50px; 
+    height: auto; 
+}
+
+.feature-text4 {
+    font-size: 24px;
+}
+
+.download-button {
+    padding: 15px 30px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-left: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.image-content4 {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+    margin-bottom: -190px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.app-image4 {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .learning-platform-section4 {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 20px;
+        margin-left: 0;
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .text-content4 {
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        animation: slideInLeftMobile 1s ease-in-out;
+    }
+
+    .section-title4 {
+        font-size: 28px; 
+        text-align: left; 
+        margin-bottom: 10px; 
+    }
+
+    .section-title4 .section-highlight {
+        font-size: 28px; 
+        display: inline; 
+    }
+
+    .features-list4 {
+        margin-bottom: 20px;
+        padding: 0 20px;
+        width: 100%; 
+    }
+
+    .feature-item4 {
+        flex-direction: row;
+        align-items: center; 
+        margin-bottom: 10px; 
+        padding-right: 15px; 
+        animation: fadeInUpMobile 1.5s ease-in-out;
+    }
+
+    .feature-icon4 {
+        margin-right: 10px;
+    }
+
+    .feature-icon4 img {
+        width: 30px;
+    }
+
+    .feature-text4 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .download-button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        align-self: flex-start; 
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .image-content4 {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        text-align: center;
+        align-self: center; 
+        animation: slideInRightMobile 1s ease-in-out;
+    }
+
+    .app-image4 {
+        max-width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftMobile {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRightMobile {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUpMobile {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

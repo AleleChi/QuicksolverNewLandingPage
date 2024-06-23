@@ -1,0 +1,265 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff4e6; 
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.left-content {
+    max-width: 45%;
+    margin-left: 100px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.section-title {
+    color: #008000; 
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.separator {
+    width: 50px;
+    height: 2px;
+    background-color: #008000;
+    margin: 10px 0;
+}
+
+.brand {
+    font-size: 24px;
+    color: #008000;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #008000;
+    border-radius: 5px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #008000; 
+}
+
+.contact-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.right-content {
+    max-width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: flex-start; 
+        padding: 20px;
+        animation: fadeInMobile 1.5s ease-in-out;
+    }
+
+    .left-content {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: left;
+        animation: slideInLeftMobile 1s ease-in-out;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: left; 
+    }
+
+    .section-description {
+        font-size: 16px;
+        text-align: left; 
+    }
+
+    .separator {
+        width: 60px;
+        height: 2px;
+        background-color: #008000;
+        margin: 10px 0;
+    }
+
+    .brand {
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: left; 
+    }
+
+    .contact-details {
+        width: 100%;
+        gap: 10px;
+        text-align: left; 
+    }
+
+    .contact-item {
+        justify-content: flex-start; 
+    }
+
+    .right-content {
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: left;
+        animation: slideInRightMobile 1s ease-in-out;
+    }
+
+    .form-title {
+        font-size: 20px;
+        text-align: left; 
+    }
+
+    .form-label {
+        font-size: 14px;
+        text-align: left; 
+    }
+
+    .form-input, .form-textarea {
+        font-size: 14px;
+        width: 100%; 
+        margin: 0; 
+    }
+
+    .submit-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Animations */
+@keyframes fadeInMobile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftMobile {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRightMobile {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
