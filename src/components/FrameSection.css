@@ -113,13 +113,14 @@
 }
 
 .frame-section .app-buttons {
+  
     display: flex;
     gap: 20px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.frame-section .app-button img {
-    width: 150px;
+.frame-section .app-buttonn img {
+    width: 100%;
     height: auto;
     transition: transform 0.3s;
 }
@@ -243,8 +244,8 @@
     }
 
     .frame-section .app-button img {
-        width: 120px; 
-        margin-left: 25px;
+        width: 150px; 
+        margin-left: 1px;
     }
 
     .frame-section .image-content {
