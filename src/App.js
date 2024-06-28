@@ -9,7 +9,8 @@ import LearningPlatformSection from './components/LearningPlatformSection';
 import ContactSection from './components/ContactSection';
 import DownloadSection from './components/DownloadSection';
 import Footer from './components/Footer';
-import About from './components/About'; // import your new About component
+import About from './components/About'; // Import your new About component
+import FAQ from './components/FAQ'; // Import the FAQ component
 import './App.css';
 
 function AppContent() {
@@ -20,11 +21,12 @@ function AppContent() {
     frameSectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const showHeaderFooter = location.pathname === '/' || location.pathname === '/about-us';
+  const showHeaderFooterDownload = location.pathname === '/' || location.pathname === '/about-us' || location.pathname === '/faq';
+  const showContactDownloadFooter = location.pathname === '/faq';
 
   return (
     <>
-      {showHeaderFooter && <Header scrollToFrameSection={scrollToFrameSection} />}
+      {showHeaderFooterDownload && <Header scrollToFrameSection={scrollToFrameSection} />}
       <Routes>
         <Route path="/" element={
           <>
@@ -43,9 +45,12 @@ function AppContent() {
             <DownloadSection />
           </>
         } />
+        <Route path="/faq" element={<FAQ />} />
         {/* Add other routes here */}
       </Routes>
-      {showHeaderFooter && <Footer />}
+      {showContactDownloadFooter && <ContactSection />}
+      {showHeaderFooterDownload && <DownloadSection />}
+      {showHeaderFooterDownload && <Footer />}
     </>
   );
 }
