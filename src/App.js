@@ -20,11 +20,11 @@ function AppContent() {
     frameSectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const showHeaderFooterDownload = location.pathname === '/' || location.pathname === '/about-us';
+  const showHeaderFooter = location.pathname === '/' || location.pathname === '/about-us';
 
   return (
     <>
-      {showHeaderFooterDownload && <Header scrollToFrameSection={scrollToFrameSection} />}
+      {showHeaderFooter && <Header scrollToFrameSection={scrollToFrameSection} />}
       <Routes>
         <Route path="/" element={
           <>
@@ -37,11 +37,15 @@ function AppContent() {
             <DownloadSection />
           </>
         } />
-        <Route path="/about-us" element={<About />} />
+        <Route path="/about-us" element={
+          <>
+            <About />
+            <DownloadSection />
+          </>
+        } />
         {/* Add other routes here */}
       </Routes>
-      {showHeaderFooterDownload && <DownloadSection />}
-      {showHeaderFooterDownload && <Footer />}
+      {showHeaderFooter && <Footer />}
     </>
   );
 }
