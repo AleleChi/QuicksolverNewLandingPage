@@ -5,8 +5,7 @@ import AppStoreIcon from '../assets/app-store-icon.png';
 import PhoneMockup1 from '../assets/phone-mockup1.png';
 import PhoneMockup2 from '../assets/phone-mockup2.png';
 import CircleBackground from '../assets/Content.png';
-import Icon from '../assets/icon.svg'; // Import your icon
-
+import Icon from '../assets/icon.svg'; 
 const textOptions = [
   "Chemistry Problems",
   "Physics Problems",
@@ -53,11 +52,11 @@ const FrameSection = forwardRef((props, ref) => {
     <div className="frame-section" ref={ref}>
       <div className="circle-container">
         <img src={CircleBackground} alt="Circle Background" className="circle-background" />
-        <img src={Icon} alt="Icon" className="rotating-icon" /> {/* Add the rotating icon */}
+        <img src={Icon} alt="Icon" className="rotating-icon" /> 
       </div>
       <div className="circle-container small-circle">
         <img src={CircleBackground} alt="Circle Background" className="circle-background smaller" />
-        <img src={Icon} alt="Icon" className="rotating-icon small-rotating-icon" /> {/* Add the rotating icon */}
+        <img src={Icon} alt="Icon" className="rotating-icon small-rotating-icon" /> 
       </div>
       <div className="content fade-in-slide-up">
         <div className="text-content">

@@ -115,9 +115,11 @@
 .frame-section .app-buttons {
   
     display: flex;
-    gap: 80px;
+    flex-direction: row;
+    gap: 20px;
     animation: fadeIn 1.5s ease-in-out;
 }
+
 
 .frame-section .app-buttonn img {
     width: 100%;
