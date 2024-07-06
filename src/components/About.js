@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { motion } from 'framer-motion';
 import './About.css';
-import storyImage from '../assets/story-image.png'; 
-import People1 from '../assets/image1.png'; 
+import storyImage from '../assets/story-image.png';
+import People1 from '../assets/image1.png';
 import People2 from '../assets/image2.png';
 import People3 from '../assets/image3.png';
+import DownloadSection from './DownloadSection';
 
 const About = () => {
+  const [showDownloadSection, setShowDownloadSection] = useState(true); // Set the condition here
+
   const settings = {
     dots: true,
     infinite: true,
@@ -21,7 +24,7 @@ const About = () => {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -91,6 +94,7 @@ const About = () => {
           </motion.div>
         </Slider>
       </div>
+      {showDownloadSection && <DownloadSection />}
     </motion.div>
   );
 };

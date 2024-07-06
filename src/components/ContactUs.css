@@ -1,0 +1,271 @@
+/* src/components/ContactUs.css */
+
+.contact-page {
+    position: relative;
+    top: 190px;
+    text-align: center;
+    padding: 50px 20px;
+    padding-bottom: 190px; 
+}
+
+.contact-header-cards-wrapper {
+    background-color: #b9f8bb;
+    padding: 50px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact-page h1 {
+    color: #000;
+    font-size: 45px;
+    margin-bottom: 40px;
+    max-width: 100%; 
+   
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    position: relative;
+}
+
+.contact-card.green-card {
+    background-color: #1c8c23;
+    color: white;
+}
+
+.contact-card.green-card h2,
+.contact-card.green-card p,
+.contact-card.green-card .contact-button {
+    color: white;
+}
+
+.contact-card.green-card .contact-button img {
+    filter: invert(1);
+}
+
+.contact-card h2 {
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.contact-card.green-card p {
+    color: white;
+}
+
+.liveChat {
+    background: #FFF;
+}
+
+.greenHeading {
+    color: #1c8c23;
+}
+
+.blackHeading {
+    color: #000;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    color: #1c8c23;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+}
+
+.contact-button img {
+    margin-left: 10px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.contact-actions .contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.black-button {
+    background-color: #080808;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 140px;
+}
+
+.black-button img {
+    width: 20px;
+}
+
+.green-circle {
+    width: 20px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(10, 114, 18, 0.15);
+    margin-left: 110px;
+}
+
+.callIconn {
+    width: 35px;
+    height: 35px;
+}
+
+.about-story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+   
+}
+
+.about-story-text {
+    flex: 1;
+    padding-right: 20px;
+    
+}
+
+.about-story-image {
+    flex: 1;
+}
+
+.about-story img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-heading {
+    color: #FFDE97;
+}
+
+.about-story .about_Heading{
+    color: #FFF;
+}
+.about-button {
+    background-color: #0A7212;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.about-button:hover {
+    background-color: #066d1a;
+}
+
+.contact-card:hover {
+    background-color: #1c8c23;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover h2,
+.contact-card:hover p,
+.contact-card:hover .contact-button {
+    color: white;
+}
+
+.contact-card:hover .contact-button img {
+    filter: invert(1);
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .contact-cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        padding: 30px;
+        margin-bottom: 10px;
+        margin-right: 70px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-actions .contact-button {
+        margin-bottom: 10px;
+    }
+
+    .about-story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobileArrow {
+        padding: 10px;
+        border-radius: 25px;
+        background: #FFF;
+        color: #000;
+        display: flex;
+        align-items: center;
+    }
+
+    .liveChatMobile {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .about-story-text {
+        padding-right: 0;
+    }
+
+    .about-story-image {
+        margin-top: 20px;
+    }
+
+   
+}

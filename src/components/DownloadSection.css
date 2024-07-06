@@ -6,6 +6,10 @@
     background-color: #f0f5f0;
     border-top: 2px solid #008000; 
     animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px; /* Add margin to avoid overlapping */
+    padding-bottom: 50px; /* Ensure enough space before the footer */
+    max-width: 100%; /* Ensure uniform width */
+    
 }
 
 .text-content7 {
@@ -38,7 +42,6 @@
         flex-direction: column;
         align-items: flex-start; 
         padding: 20px;
-        margin-right: 20px;
         animation: fadeInMobile 1.5s ease-in-out;
     }
 
@@ -49,14 +52,14 @@
     }
 
     .app-buttons7 {
-        display: flex;
-        flex-direction: row; 
+        flex-direction: column; /* Stack buttons vertically */
         gap: 10px;
+        width: 100%;
         animation: slideInRightMobile 1s ease-in-out;
     }
 
     .app-button7 {
-        width: 100%;
+        width: 100%; /* Make buttons full width */
     }
 }
 

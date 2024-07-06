@@ -5,6 +5,7 @@
     padding: 50px;
     background-color: #fff4e6; 
     animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px; /* Add margin to avoid overlapping */
 }
 
 .left-content {
