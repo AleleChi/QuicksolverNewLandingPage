@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import Logo from '../assets/Logo.png';
 
@@ -26,7 +27,9 @@ const Header = ({ scrollToFrameSection }) => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={Logo} alt="logo" className="logo-image" />
+        <Link to="/">
+          <img src={Logo} alt="logo" className="logo-image" />
+        </Link>
       </div>
       <button className="download-button" onClick={scrollToFrameSection}>Download App</button>
     </header>

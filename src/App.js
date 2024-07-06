@@ -17,7 +17,10 @@ import './App.css';
 
 function AppContent() {
   const scrollToFrameSection = () => {
-    // Your scroll function here
+    const frameSection = document.getElementById('frame-section');
+    if (frameSection) {
+      frameSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -26,7 +29,9 @@ function AppContent() {
       <Routes>
         <Route path="/" element={
           <>
-            <FrameSection />
+            <div id="frame-section">
+              <FrameSection />
+            </div>
             <NewSection scrollToFrameSection={scrollToFrameSection} />
             <ScanSolveSection scrollToFrameSection={scrollToFrameSection} />
             <TrustSection />
@@ -38,7 +43,7 @@ function AppContent() {
         <Route path="/about-us" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact-us" element={<ContactUs showDownloadSection={true} />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} /> {/* Add the Privacy Policy route */}
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
       <Footer />
     </>
