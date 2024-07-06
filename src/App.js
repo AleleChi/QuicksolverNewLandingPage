@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import ContactUs from './components/ContactUs';
+import PrivacyPolicyPage from './components/PrivacyPolicy'; // Import the Privacy Policy Page
 import './App.css';
 
 function AppContent() {
@@ -37,6 +38,7 @@ function AppContent() {
         <Route path="/about-us" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact-us" element={<ContactUs showDownloadSection={true} />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} /> {/* Add the Privacy Policy route */}
       </Routes>
       <Footer />
     </>

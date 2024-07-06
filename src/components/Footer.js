@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import AppStoreIcon from '../assets/app-store-icon.png'; 
-import GooglePlayIcon from '../assets/google-play-icon.png'; 
+import AppStoreIcon from '../assets/appstore.png'; 
+import GooglePlayIcon from '../assets/google.png'; 
 import LinkedInIcon from '../assets/linkedin-icon.png'; 
 import TwitterIcon from '../assets/twitter-icon.png'; 
 import FacebookIcon from '../assets/facebook-icon.png'; 
@@ -18,11 +18,11 @@ const Footer = () => {
           <img src={Logo} alt="QuickSolver Logo" className="logo-image" /> 
         </div>
         <div className="app-buttons">
-          <a href="https://play.google.com/store/apps/details?id" target="_blank" rel="noopener noreferrer" className="app-buttons">
-            <img src={GooglePlayIcon} alt="Get it on Google Play" />
+          <a href="https://play.google.com/store/apps/details?id" target="_blank" rel="noopener noreferrer">
+            <img src={GooglePlayIcon} alt="Get it on Google Play" className="app-button" />
           </a>
-          <a href="https://apps.apple.com/app/id" target="_blank" rel="noopener noreferrer" className="app-buttons">
-            <img src={AppStoreIcon} alt="Download on the App Store" />
+          <a href="https://apps.apple.com/app/id" target="_blank" rel="noopener noreferrer">
+            <img src={AppStoreIcon} alt="Download on the App Store" className="app-button" />
           </a>
         </div>
       </div>

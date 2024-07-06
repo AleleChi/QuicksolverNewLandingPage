@@ -6,10 +6,8 @@
     background-color: #f0f5f0;
     border-top: 2px solid #008000; 
     animation: fadeIn 1.5s ease-in-out;
-    margin-top: 50px; /* Add margin to avoid overlapping */
-    padding-bottom: 50px; /* Ensure enough space before the footer */
-    max-width: 100%; /* Ensure uniform width */
-    
+    padding-bottom: 50px; 
+    width: 100%;
 }
 
 .text-content7 {
@@ -25,12 +23,12 @@
 
 .app-buttons7 {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     animation: slideInRight 1s ease-in-out;
 }
 
 .app-button7 {
-    display: inline-block;
+    display: flex;
     width: 150px;
     height: auto;
     cursor: pointer;
@@ -52,14 +50,14 @@
     }
 
     .app-buttons7 {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
         gap: 10px;
-        width: 100%;
+        width: 50%;
         animation: slideInRightMobile 1s ease-in-out;
     }
 
     .app-button7 {
-        width: 100%; /* Make buttons full width */
+        width: 100%; 
     }
 }
 

@@ -1,5 +1,4 @@
 .footer {
-    
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -21,13 +20,13 @@
 
 .app-buttons {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     animation: slideInRight 1s ease-in-out;
 }
 
 .app-button {
-    display: inline-block;
-    width: 150px; 
+    width: 50%; 
     height: auto;
     cursor: pointer;
 }
@@ -111,7 +110,7 @@
         animation: slideInUpMobile 1.5s ease-in-out;
     }
 
-    .app-buttons {
+    .app-button {
         width: 150px; 
     }
 
