@@ -59,12 +59,13 @@
     }
 
     .logo {
-        margin: 20px;
+        margin: 5px;
     }
 
     .logo-image {
         width: 170px !important; 
-        margin-right: 0;
+       position:relative;
+       left:20px;
         animation: logoSlideInMobile 1s ease-in-out;
     }
 
