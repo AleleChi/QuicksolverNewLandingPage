@@ -9,7 +9,7 @@ import People3 from '../assets/image3.png';
 import DownloadSection from './DownloadSection';
 
 const About = () => {
-  const [showDownloadSection, setShowDownloadSection] = useState(true); // Set the condition here
+ 
 
   const settings = {
     dots: true,
@@ -94,7 +94,7 @@ const About = () => {
           </motion.div>
         </Slider>
       </div>
-      {showDownloadSection && <DownloadSection />}
+       <DownloadSection />
     </motion.div>
   );
 };
