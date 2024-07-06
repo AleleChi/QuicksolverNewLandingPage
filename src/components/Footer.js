@@ -18,10 +18,10 @@ const Footer = () => {
           <img src={Logo} alt="QuickSolver Logo" className="logo-image" /> 
         </div>
         <div className="app-buttons">
-          <a href="https://play.google.com/store/apps/details?id" target="_blank" rel="noopener noreferrer">
+          <a href="https://play.google.com/store/apps/details?id=com.myapp.quick_solver2" target="_blank" rel="noopener noreferrer">
             <img src={GooglePlayIcon} alt="Get it on Google Play" className="app-button" />
           </a>
-          <a href="https://apps.apple.com/app/id" target="_blank" rel="noopener noreferrer">
+          <a href="https://apps.apple.com/us/app/quick-solver/id6474582912" target="_blank" rel="noopener noreferrer">
             <img src={AppStoreIcon} alt="Download on the App Store" className="app-button" />
           </a>
         </div>
