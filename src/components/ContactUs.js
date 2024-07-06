@@ -20,14 +20,14 @@ const ContactUs = ({ showDownloadSection }) => {
             <img src={enquiryIcon} alt="Enquiry and Feedback Icon" className="contact-icon" />
             <h2>Enquiry and Feedback</h2>
             <p>Curious about how we can help you excel in science? We're here to discuss your challenges and provide answers to any questions you may have!</p>
-            <a href="#" className="contact-button">Send us a message <img src={arrowIcon} alt="Arrow Icon" /></a>
+            <a href="/contact" className="contact-button">Send us a message <img src={arrowIcon} alt="Arrow Icon" /></a>
           </div>
           <div className="contact-card green-card">
             <img src={liveChatIcon} alt="Live Chat Icon" className="contact-icon liveChat" />
             <h2>Live Chat</h2>
             <p>We’re available</p>
             <p>Mon. - Fri. 5pm to 7pm (WAT)<br />Sat. - Sun. 12pm to 5pm (WAT)</p>
-            <a href="#" className="contact-button"> <span className='mobileArrow'><img src={liveChatIcon} alt="Live Chat Icon" className='liveChatMobile' /> Start Live Chat</span> <img src={arrowIcon} alt="Arrow Icon" className='arrowColour' /></a>
+            <a href="/chat" className="contact-button"> <span className='mobileArrow'><img src={liveChatIcon} alt="Live Chat Icon" className='liveChatMobile' /> Start Live Chat</span> <img src={arrowIcon} alt="Arrow Icon" className='arrowColour' /></a>
           </div>
           <div className="contact-card call">
             <img src={callIcon} alt="Call or Mail us Icon" className="contact-icon" />
@@ -42,7 +42,7 @@ const ContactUs = ({ showDownloadSection }) => {
             <img src={learnMoreIcon} alt="Learn More Icon" className="contact-icon" />
             <h2>Learn More</h2>
             <p>We empower students and educators with cutting-edge tools to master science effortlessly. Transforming learning and problem-solving across the globe.</p>
-            <a href="#" className="contact-button">About QuickSolver <img src={arrowIcon} alt="Arrow Icon" /></a>
+            <a href="/more" className="contact-button">About QuickSolver <img src={arrowIcon} alt="Arrow Icon" /></a>
           </div>
         </div>
       </div>
